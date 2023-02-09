@@ -19,7 +19,7 @@ EXCEPTIONS = set([IOError, FileNotFoundError,
     exceptions.RequestException, exceptions.HTTPError,
     exceptions.ConnectionError, exceptions.Timeout])
 
-term = '戊亥とこ'
+term = '' # 検索ワード
 headers = {"Ocp-Apim-Subscription-Key" : API_KEY}
 params = {"q": term, "offset": 0, "count": GROUP_SIZE, "imageType":"Photo", "color":"ColorOnly"}
 
